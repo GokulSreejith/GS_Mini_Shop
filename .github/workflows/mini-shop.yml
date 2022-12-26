@@ -14,8 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: composer update --ignore-platform-req=ext-curl --ignore-platform-req=ext-intl
-
+    
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
